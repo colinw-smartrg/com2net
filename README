@@ -1,0 +1,19 @@
+#
+# com2net Linux daemon
+# 
+# bind telnet port to serial port for creating a console server.
+
+# requires: libappf
+# FILES:
+#  /etc/com2net.conf
+
+# Config file to establish mappings format
+# <tcp port #>,<serial device path>,speed,[<log file path>]
+#
+# Example config:
+#
+3000,/dev/ttyCOM0,115200,/tmp/log/com0.log
+3001,/dev/ttyCOM1,115200,/tmp/log/com1.log
+3002,/dev/ttyCOM2,115200,/tmp/log/com2.log
+3003,/dev/ttyCOM3,115200,/tmp/log/com3.log
+
